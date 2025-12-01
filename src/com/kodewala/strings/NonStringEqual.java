@@ -18,7 +18,6 @@ public class NonStringEqual {
 		// reference
 
 		// In case of string it compares the content
-		// Open type window
 	}
 
 }
