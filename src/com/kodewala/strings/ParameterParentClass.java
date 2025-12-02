@@ -16,5 +16,6 @@ public class ParameterParentClass {
 
 	public static void main(String[] args) {
 		Sumi sums = new Sumi("hello");
+		// explicitly calling super class using expected parameter
 	}
 }
