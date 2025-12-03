@@ -15,7 +15,20 @@ public class EmployeeDetails {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter employee name: ");
-		name = sc.nextLine();
+
+		while (true) {
+			name = sc.nextLine();
+
+			if (name.matches("[A-Za-z ]+")) {
+				System.out.println("Valid name");
+				break;
+			} else {
+				System.out.println("Invalid name! Only alphabets allowed.");
+				// consume the invalid input line (same method you used to read)
+				// but this line is actually unnecessary because you've ALREADY consumed it
+				// so simply do nothing here
+			}
+		}
 
 		while (true) {
 			System.out.println("Enter employee id: ");
