@@ -7,7 +7,7 @@ public class StringAssign {
 		String s1 = "Kodewala ";
 		// Stored in SCP. Immutable — cannot be changed.
 
-		String s2 = s1.concat(" Academy");
+		String s2 = s1.concat(" Academy"); // Interview
 		// concat() creates a NEW object in the HEAP.
 		// s1 still points to "Kodewala".
 		// s2 points to "Kodewala Academy" (in heap).
@@ -16,7 +16,7 @@ public class StringAssign {
 		System.out.println(s1); // Kodewala
 		System.out.println(s2); // Kodewala Academy
 
-		String s3 = s1 + s2;
+		String s3 = s1 + s2; // Interview
 		// The + operator uses StringBuilder internally.
 		// Creates:
 		// 1. A StringBuilder object
@@ -31,7 +31,7 @@ public class StringAssign {
 		// Total = 2 runtime objects (NOT 4)
 		// (s1 and s2 already exist; we do NOT count them again)
 
-		String s5 = "Hello" + " Kodewala";
+		String s5 = "Hello" + " Kodewala"; // Interview
 		// COMPILE-TIME constant folding.
 		// Compiler converts this to: "Hello Kodewala"
 		// Only ONE object created in SCP.
