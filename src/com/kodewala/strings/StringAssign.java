@@ -41,6 +41,13 @@ public class StringAssign {
 		// Uses StringBuilder → creates a NEW String in HEAP.
 		// NOT stored in SCP.
 
+		// String s = "Hello " + obj;
+		/*- String s = new StringBuilder()
+		       .append("Hello ")
+		       .append(String.valueOf(obj))
+		       .toString();
+		*/
+
 		String s7 = new String("hello" + "kodewala");
 		// "hello" + "kodewala" is a compile-time constant → "hellokodewala" placed in
 		// SCP
