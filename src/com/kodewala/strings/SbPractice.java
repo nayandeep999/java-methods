@@ -4,6 +4,9 @@ public class SbPractice {
 
 	public static void main(String[] args) {
 
+		// Both StringBuilder and Buffer extends AbstractStringBuilder class to append
+		// and do other stuff
+
 		StringBuilder sb = new StringBuilder(); // initial capacity is 16
 		System.out.println(sb);
 		System.out.println("The length is: " + sb.length());

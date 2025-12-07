@@ -8,5 +8,11 @@ public class StringArr {
 		System.out.println(arr);
 
 		System.out.println("arr.getClass() " + arr.getClass());
+
+		Object o = null;
+
+		System.out.println(String.valueOf(o)); // prints "null"
+		// System.out.println(o.toString()); // NPE
+
 	}
 }
