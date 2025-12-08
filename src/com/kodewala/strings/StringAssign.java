@@ -33,6 +33,7 @@ public class StringAssign {
 
 		String s5 = "Hello" + " Kodewala"; // Interview
 		// COMPILE-TIME constant folding.
+		// Its a compile time optimization
 		// Compiler converts this to: "Hello Kodewala"
 		// Only ONE object created in SCP.
 

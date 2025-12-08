@@ -21,6 +21,9 @@ public class StringExp {
 		String s5 = new String("Academy");
 		String s6 = new String("Kodewala");
 
+		// In case of non string equals() method just compare the objects address or
+		// refrence
+
 		// Total 4 objects s4, s5, s6, "Kodewala" , "Academy"
 
 	}
