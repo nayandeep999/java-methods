@@ -5,9 +5,10 @@ public class DynamicEmailTemplate {
 	StringBuilder genEmail(String _firstName, String _orderNum, String _date, int _amount, String _deliveryDate) {
 
 		StringBuilder email = new StringBuilder();
-		email.append("Dear ").append(_firstName).append(" Thankyou for placing order.")
-				.append(" Your order details are: ").append(_orderNum).append(" ").append(_date).append(" ")
-				.append(_amount).append(" ").append(_deliveryDate);
+		email.append("Dear ").append(_firstName).append(" Thankyou for placing order.\n")
+				.append("Your order details are: ").append("Order Id: ").append(_orderNum).append(" Date: ")
+				.append(_date).append(" Amount: ").append(_amount).append(" Delivery date: ").append(_deliveryDate)
+				.append("\n");
 
 		return email;
 	}
